@@ -24,7 +24,7 @@ const PanionNavBar: React.FC = () => {
                 md={2}
                 lg={3}
               >
-                  <Link href={`/feed`}>
+                  <Link href={'/feed'}>
                     <img
                       src="/images/panion_logo_with_flag.png"
                       className={styles.nav_logo}
