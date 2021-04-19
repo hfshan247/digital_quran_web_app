@@ -1,7 +1,6 @@
-import Link from 'next/link'
-
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Link from 'next/link';
+import Head from 'next/head';
+import styles from '../styles/Home.module.scss';
 
 export default function Home() {
   return (
@@ -40,13 +39,15 @@ export default function Home() {
           <Link href="/feeds/feeds" >
             <a className={styles.card}>
             <h3>Feeds &rarr;</h3>
-            <p>An all-in-one community management platform that helps you grow, engage, and monetize your online community.</p>
+            <p>An all-in-one community management platform that helps you grow,
+              engage, and monetize your online community.</p>
           </a></Link>
-          
+
           <Link href="/communities/communities">
           <a  className={styles.card}>
             <h3>Communities &rarr;</h3>
-            <p>An all-in-one community management platform that helps you grow, engage, and monetize your online community.</p>
+            <p>An all-in-one community management platform that helps you grow,
+              engage, and monetize your online community.</p>
           </a>
           </Link>
 
@@ -56,7 +57,8 @@ export default function Home() {
             className={styles.card}
           >
             <h3>Groups &rarr;</h3>
-            <p>Foster new relationships within your network by hosting events and enabling people to form group activities around a common interest.</p>
+            <p>Foster new relationships within your network by hosting events and
+              enabling people to form group activities around a common interest.</p>
           </a>
           </Link>
 
@@ -85,5 +87,5 @@ export default function Home() {
         </a>
       </footer>
     </div>
-  )
+  );
 }

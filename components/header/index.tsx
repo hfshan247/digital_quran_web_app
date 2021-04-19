@@ -3,13 +3,13 @@ import Head from 'next/head';
 import styles from './header.module.css';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 
-export const siteTitle = 'Panion | The Community Engagement Platform';
+export const siteTitle = 'Digital Quran | Verify Quranic Verses';
 
 const Header: React.FunctionComponent<{}> = () => (
   <Head>
     <meta
       name="description"
-      content="Panion is a social app that allows you to run keyword searches to find activity partners nearby. Search for like-minded people based on common interests, values, and experiences. Make new friends today!" />
+      content="Digital Quran is a tool that allows you to verify quranic verses." />
     <meta
       property="og:image"
       content={`https://og-image.now.sh/${encodeURI(

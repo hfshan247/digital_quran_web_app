@@ -1,0 +1,49 @@
+{
+  "extends": ["tslint-config-airbnb", "tslint-react-hooks"],
+  "linterOptions": {
+    "project": "tsconfig.json"
+  },
+  "rules": {
+    "await-promise": [true, "Bluebird", "Thenable", "SchemaBuilder", "RequestPromise"],
+    "no-floating-promises": [true, "Bluebird", "Thenable", "SchemaBuilder", "RequestPromise"],
+    "max-line-length": [true, 120],
+    "semicolon": [true, "always"],
+    "whitespace": [true, "check-branch", "check-operator", "check-typecast"],
+    "no-trailing-whitespace": [true, "ignore-comments"],
+    "import-name": false,
+    "align": true,
+    "import-spacing": true,
+    "arrow-parens": false,
+    "indent": true,
+    "no-unused-declaration": true,
+    "promise-function-async": true,
+    "ordered-imports": false,
+    "no-console": false,
+    "comment-format": false,
+    "no-var-requires": false,
+    "interface-name": false,
+    "class-name": true,
+    "no-implicit-dependencies": false,
+    "max-classes-per-file": false,
+    "no-duplicate-imports": true,
+    "no-unused-expression": [true, "allow-fast-null-checks"],
+    "no-empty-interface": true,
+    "no-switch-case-fall-through": true,
+    "object-literal-sort-keys": false,
+    "member-access": false,
+    "member-ordering": false,
+    "function-name": [
+      true,
+      {
+        "function-regex": "^[a-zA-Z$][\\w\\d]+$",
+        "method-regex": "^[a-z$][\\w\\d]+$",
+        "private-method-regex": "^[a-z$][\\w\\d]+$",
+        "protected-method-regex": "^[a-z$][\\w\\d]+$",
+        "static-method-regex": "^[a-z$][\\w\\d]+$"
+      }
+    ],
+    "variable-name": {
+      "options": ["ban-keywords", "check-format", "allow-leading-underscore", "allow-pascal-case"]
+    }
+  }
+}

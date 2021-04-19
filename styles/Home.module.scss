@@ -1,0 +1,240 @@
+@import "./colors_variables";
+
+:export {color_white: $color_white; }
+
+.flex_container {
+  min-height: calc(100vh - 70);
+  display: flex;
+  flex: 1;
+  padding: 0; margin: 0;
+}
+
+.flex_direction_row_container {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  padding: 0; margin: 0;
+}
+.flex_direction_col_container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0; margin: 0;
+}
+.flex_aligned_center_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex_aligned_flex_start_container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.flex_aligned_row_center_container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.flex_aligned_space_between_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.with_background_container {
+  background-color: $background_grey;
+}
+.zero_horizontal_padding {
+  padding-left: 0; padding-right: 0;
+}
+.vertical_padding {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.zero_horizontal_margin {
+  margin: 0;
+}
+.horizontal_16_margin {
+  margin-left: 0.9rem;
+  margin-right: 0.9rem;
+}
+.login_page_left_padding {
+  padding-left: 8rem;
+}
+.login_background_image_container {
+  background-image: url("/images/login_screen_background_image.jpg");
+  height: 100vh;
+  background-size: cover;
+}
+
+.pillButton {
+  background-color: #0000ff;
+  width: 120rem;
+  height: 32rem;
+  border-color: red;
+  border-radius: 2rem;
+  color: white;
+}
+
+.h1 {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 1rem;
+}
+
+
+
+.main {
+  padding: 5rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.onboarding_footer {
+  a {
+    font-size: 0.778rem;
+    line-height: 1rem;
+    color: $text_color_light_grey;
+  }
+}
+
+.footer {
+  height: 72px;
+  width: 100%;
+  padding-inline: 1.278rem;
+  border-radius: 0.889rem;
+}
+.footer a {
+  cursor: pointer;
+  color: $text_color_light_grey;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+  text-align: center;
+
+  a {
+    color: #0070f3;
+    text-decoration: none;
+  }
+  a:hover,
+  a:focus,
+  a:active {
+    text-decoration: underline;
+  }
+}
+
+.description {
+  line-height: 1.5;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.code {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+  /* margin-top: 3rem; */
+}
+
+.card {
+  /* margin: 1rem; */
+  flex-basis: 45%;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #0070f3;
+  border-color: #0070f3;
+}
+
+.card h3 {
+  /* margin: 0 0 1rem 0; */
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.logo {
+  width: 7.185rem;
+  height: 2rem;
+}
+
+.button {
+  background-color: #00ff00;
+  height: 32rem;
+}
+.forgotpassword p{
+  font-size:0.888rem;
+   color: #6E6E7D;
+   line-height:1.11rem;
+   font-weight:500;
+
+}
+.show{
+  display: block !important;
+}
+.hide{
+  display: none !important;
+}
+.password_matched{
+  margin-top: 10px;
+  line-height: 1.111rem;
+  display: flex !important;
+
+}
+.password_matched p{
+  color: #37B47E;
+  font-size: 0.889rem;
+  text-align: left;
+}
+.password_not_matched{
+  margin-top: 16px;
+  line-height: 1.111rem;
+  display: flex !important;
+
+}
+.password_not_matched p{
+  color: #FF5730;
+  font-size: 0.889rem;
+  text-align: left;
+}
+
+@media screen and (max-width: 1024px) {
+  .login_page_left_padding{
+    padding-left: 4rem;
+  }
+  .footer {
+    max-width: 24rem;
+    a {
+      line-height: 2rem;
+    }
+  }
+}

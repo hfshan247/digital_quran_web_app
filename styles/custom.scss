@@ -1,0 +1,10 @@
+
+
+$enable-responsive-font-sizes: true;
+$h2-font-size: '1.778rem';
+$h3-font-size: '1.333rem';
+$h4-font-size: '1.111rem';
+$h5-font-size: '1rem';
+/* import bootstrap to set changes */
+@import "~bootstrap/scss/bootstrap";
+@import '~bootstrap/dist/css/bootstrap.min.css';
